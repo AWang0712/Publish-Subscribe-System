@@ -1,0 +1,6 @@
+spring:
+  rabbitmq:
+    host: rabbitmq-cluster-service  # Kubernetes Service Name for RabbitMQ
+    port: 5672
+    username: user
+    password: secret
