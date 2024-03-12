@@ -1,0 +1,9 @@
+# producer-module-deployment.yaml
+
+spec:
+  containers:
+    - name: producer-module
+      env:
+        - name: RABBITMQ_QUEUE_NAME
+          value: my-dynamic-queue  # Replace with actual queue name
+      # ... other container configuration
