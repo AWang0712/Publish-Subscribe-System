@@ -1,0 +1,11 @@
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest # default username
+    password: guest # default password
+    virtual-host: / # default virtual host
+    listener:
+      simple:
+        prefetch: 1 # 1 message per consumer before consuming another message
