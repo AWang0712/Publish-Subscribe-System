@@ -15,6 +15,7 @@ public class MessageConverterTest {
 
     /**
      * @Description: test send object to queue
+     * About message converter in ProducerApplication class:
      *
      * without message converter, the object will be sent as byte array:
      * 178 bytes

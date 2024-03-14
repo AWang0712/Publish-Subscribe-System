@@ -1,3 +1,6 @@
+logging:
+  level:
+    com.awangjyangzbu: debug
 
 spring:
   rabbitmq:
@@ -6,4 +9,16 @@ spring:
     username: guest # default username
     password: guest # default password
     virtual-host: / # default virtual host
+    connection-timeout: 1000 # in milliseconds
+    template:
+      retry:
+        enabled: true
+        max-attempts: 3
+        # initial-interval: 1000ms
+        # multiplier: 1
+    publisher-confirm-type: correlated # asynchronous callback for publisher confirms
+    publisher-returns: true # asynchronous callback for publisher returns
+
+
+
 
