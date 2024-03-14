@@ -1,5 +1,5 @@
 spring:
-  rabbitmq:
+  rabbitmq: # TODO: Change RabbitMQ configuration
     host: rabbitmq-cluster-service  # Kubernetes Service Name for RabbitMQ
     port: 5672
     username: user
