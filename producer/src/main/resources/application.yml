@@ -18,7 +18,9 @@ spring:
         # multiplier: 1
     publisher-confirm-type: correlated # asynchronous callback for publisher confirms
     publisher-returns: true # asynchronous callback for publisher returns
-
+    # turn off publisher confirm and return, for performance
+    #publisher-confirm-type: none
+    #publisher-returns: false
 
 
 

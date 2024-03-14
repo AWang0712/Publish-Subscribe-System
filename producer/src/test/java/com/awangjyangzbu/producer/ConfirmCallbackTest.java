@@ -31,7 +31,7 @@ public class ConfirmCallbackTest {
             public void onSuccess(CorrelationData.Confirm result) {// success to call back
                 log.debug("ConfirmCallback received");
                 if(result.isAck()) {
-                    log.debug("message send successfully to MQ, ack");
+                    log.debug("successfully send message to MQ, ack");
                 } else {
                     log.debug("message fail to send to MQ, nack. Reason: {}", result.getReason());
                 }

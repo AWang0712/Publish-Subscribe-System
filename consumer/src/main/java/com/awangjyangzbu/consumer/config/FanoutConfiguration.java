@@ -31,12 +31,12 @@ public class FanoutConfiguration {
 
     // binding fanout queue 1 and 2 to fanout exchange
     @Bean
-    public Binding binding1() {
+    public Binding fanoutBinding1() {
         return BindingBuilder.bind(fanoutQueue1()).to(fanoutExchange());
     }
 
     @Bean
-    public Binding binding2() {
+    public Binding fanoutBinding2() {
         return BindingBuilder.bind(fanoutQueue2()).to(fanoutExchange());
     }
 }

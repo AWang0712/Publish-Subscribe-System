@@ -32,22 +32,22 @@ public class DirectConfiguration {
 
     // binding direct queue 1 and 2 to direct exchange
     @Bean
-    public Binding binding1() {
+    public Binding directBinding1() {
         return BindingBuilder.bind(directQueue1()).to(directExchange()).with("red");
     }
 
     @Bean
-    public Binding binding2() {
+    public Binding directBinding2() {
         return BindingBuilder.bind(directQueue1()).to(directExchange()).with("blue");
     }
 
     @Bean
-    public Binding binding3() {
+    public Binding directBinding3() {
         return BindingBuilder.bind(directQueue2()).to(directExchange()).with("blue");
     }
 
     @Bean
-    public Binding binding4() {
+    public Binding directBinding4() {
         return BindingBuilder.bind(directQueue2()).to(directExchange()).with("green");
     }
 }

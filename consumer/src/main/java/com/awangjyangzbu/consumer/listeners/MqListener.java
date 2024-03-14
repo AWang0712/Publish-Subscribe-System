@@ -17,6 +17,8 @@ public class MqListener {
     public void listenSimpleQueue(String msg) {
 
         System.out.println("Received message from simple.queue: " + msg);
+        // to test the retry mechanism and dead letter queue
+        throw new RuntimeException("test error queue");
     }
 
     /**

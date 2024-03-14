@@ -16,7 +16,7 @@ public class ExchangeTest {
      * @Description: test send message to simple queue, without specifying the exchange
     * */
     @Test
-    public void testSendMsg2Queue() {
+    public void testSendMsg2SimpleQueue() {
         String queueName = "simple.queue";
         String msg = "Hello, Spring AMQP!";
 

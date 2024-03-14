@@ -9,3 +9,9 @@ spring:
     listener:
       simple:
         prefetch: 1 # 1 message per consumer before consuming another message
+        acknowledge-mode: auto # acknowledge mode for the consumer
+        retry:
+          enabled: true # enable retry mechanism
+          max-attempts: 3 # maximum number of attempts to retry
+
+
